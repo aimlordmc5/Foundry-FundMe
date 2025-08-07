@@ -9,14 +9,14 @@ libs = [
 ]
 
 remappings = [
-    "@solmate/=../attackathon-plume-network-nucleus-boring-vault/lib/solmate/src/",
-    "@forge-std/=../attackathon-plume-network-nucleus-boring-vault/lib/forge-std/src/",
-    "forge-std/=../attackathon-plume-network-nucleus-boring-vault/lib/forge-std/src/",
-    "@ds-test/=../attackathon-plume-network-nucleus-boring-vault/lib/forge-std/lib/ds-test/src/",
-    "@openzeppelin/=../attackathon-plume-network-nucleus-boring-vault/lib/openzeppelin-contracts/",
-    "@predicate/=../attackathon-plume-network-nucleus-boring-vault/lib/predicate-contracts/",
-    "attackathon/=../attackathon-plume-network-nucleus-boring-vault/",
-    "src/=../attackathon-plume-network-nucleus-boring-vault/src/",
+    "@solmate/=lib/solmate/src/",
+    "@forge-std/=lib/forge-std/src/",
+    "forge-std/=lib/forge-std/src/",
+    "@ds-test/=lib/forge-std/lib/ds-test/src/",
+    "@openzeppelin/=lib/openzeppelin-contracts/",
+    "@predicate/=lib/predicate-contracts/",
+    "attackathon/=lib/attackathon/",
+    "src/=lib/attackathon/src/",
 ]
 
 [fmt]
