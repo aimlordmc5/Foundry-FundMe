@@ -1,14 +1,22 @@
 [profile.default]
 auto_detect_solc = false
-evM_version = 'shanghai'
+evm_version = 'shanghai'
 optimizer = true
 optimizer_runs = 200
 
 libs = [
     "lib",
-    "/workspace/attackathon-plume-network-nucleus-boring-vault/lib",
-    "/workspace/attackathon-plume-network-nucleus-boring-vault/node_modules/@layerzerolabs/toolbox-foundry/lib",
-    "/workspace/attackathon-plume-network-nucleus-boring-vault/node_modules",
+]
+
+remappings = [
+    "@solmate/=../attackathon-plume-network-nucleus-boring-vault/lib/solmate/src/",
+    "@forge-std/=../attackathon-plume-network-nucleus-boring-vault/lib/forge-std/src/",
+    "forge-std/=../attackathon-plume-network-nucleus-boring-vault/lib/forge-std/src/",
+    "@ds-test/=../attackathon-plume-network-nucleus-boring-vault/lib/forge-std/lib/ds-test/src/",
+    "@openzeppelin/=../attackathon-plume-network-nucleus-boring-vault/lib/openzeppelin-contracts/",
+    "@predicate/=../attackathon-plume-network-nucleus-boring-vault/lib/predicate-contracts/",
+    "attackathon/=../attackathon-plume-network-nucleus-boring-vault/",
+    "src/=../attackathon-plume-network-nucleus-boring-vault/src/",
 ]
 
 [fmt]
