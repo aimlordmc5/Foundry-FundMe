@@ -1,0 +1,23 @@
+[profile.default]
+auto_detect_solc = false
+evm_version = 'shanghai'
+optimizer = true
+optimizer_runs = 200
+
+libs = [
+    "lib",
+]
+
+remappings = [
+    "@solmate/=lib/solmate/src/",
+    "@forge-std/=lib/forge-std/src/",
+    "forge-std/=lib/forge-std/src/",
+    "@ds-test/=lib/forge-std/lib/ds-test/src/",
+    "@openzeppelin/=lib/openzeppelin-contracts/",
+    "@predicate/=lib/predicate-contracts/",
+    "attackathon/=lib/attackathon/",
+    "src/=lib/attackathon/src/",
+]
+
+[fmt]
+line_length = 120
